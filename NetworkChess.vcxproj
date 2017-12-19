@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{D40C6CF8-3166-4BCC-80B6-F8988F1A842A}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\NetworkChess.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\NetworkChess.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\NetworkChess.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\NetworkChess.exe</OutputFile>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\NetworkChess.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\NetworkChess.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\NetworkChess.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\NetworkChess.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Bishop.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Data.cpp" />
+    <ClCompile Include="EnterNotifyEdit.cpp" />
+    <ClCompile Include="GameSocket.cpp" />
+    <ClCompile Include="King.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Knight.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="LoginDlg.cpp" />
+    <ClCompile Include="NetworkChess.cpp" />
+    <ClCompile Include="NetworkChessDlg.cpp" />
+    <ClCompile Include="Pawn.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Position.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PromotionDlg.cpp" />
+    <ClCompile Include="Queen.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Rook.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ServerSocket.cpp" />
+    <ClCompile Include="SpecialRule.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Unit.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NetworkChess.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Bishop.h" />
+    <ClInclude Include="Data.h" />
+    <ClInclude Include="DefineWords.h" />
+    <ClInclude Include="EnterNotifyEdit.h" />
+    <ClInclude Include="GameSocket.h" />
+    <ClInclude Include="King.h" />
+    <ClInclude Include="Knight.h" />
+    <ClInclude Include="LoginDlg.h" />
+    <ClInclude Include="NetworkChess.h" />
+    <ClInclude Include="NetworkChessDlg.h" />
+    <ClInclude Include="Pawn.h" />
+    <ClInclude Include="Position.h" />
+    <ClInclude Include="PromotionDlg.h" />
+    <ClInclude Include="Queen.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Rook.h" />
+    <ClInclude Include="ServerSocket.h" />
+    <ClInclude Include="SpecialRule.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Unit.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\2P_BUTTON.bmp" />
+    <Image Include="res\2P_BUTTON_ACT.bmp" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\BlackBishop.bmp" />
+    <Image Include="res\BlackBishopMask.bmp" />
+    <Image Include="res\BlackBoard.bmp" />
+    <Image Include="res\BlackKing.bmp" />
+    <Image Include="res\BlackKingCastling.bmp" />
+    <Image Include="res\BlackKingCheck.bmp" />
+    <Image Include="res\BlackKingMask.bmp" />
+    <Image Include="res\BlackKnight.bmp" />
+    <Image Include="res\BlackKnightMask.bmp" />
+    <Image Include="res\BlackPawn.bmp" />
+    <Image Include="res\BlackPawnMask.bmp" />
+    <Image Include="res\BlackQueen.bmp" />
+    <Image Include="res\BlackQueenMask.bmp" />
+    <Image Include="res\BlackRook.bmp" />
+    <Image Include="res\BlackRookMask.bmp" />
+    <Image Include="res\BlackSel.bmp" />
+    <Image Include="res\BlackSelBoard.bmp" />
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="res\Castling.bmp" />
+    <Image Include="res\ChessBoard.bmp" />
+    <Image Include="res\ChessSkin.bmp" />
+    <Image Include="res\Enpasant.bmp" />
+    <Image Include="res\GameRule1.bmp" />
+    <Image Include="res\GameRule2.bmp" />
+    <Image Include="res\GameRule3.bmp" />
+    <Image Include="res\HOST_BUTTON.bmp" />
+    <Image Include="res\HOST_BUTTON_ACT.bmp" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\JOIN_BUTTON.bmp" />
+    <Image Include="res\JOIN_BUTTON_ACT.bmp" />
+    <Image Include="res\LoginBG.bmp" />
+    <Image Include="res\LoginClient.bmp" />
+    <Image Include="res\LoginLocal.bmp" />
+    <Image Include="res\LoginServer.bmp" />
+    <Image Include="res\main.bmp" />
+    <Image Include="res\MFCApplication2.ico" />
+    <Image Include="res\NetworkChess.ico" />
+    <Image Include="res\OK.bmp" />
+    <Image Include="res\Sel.bmp" />
+    <Image Include="res\Untitled-1.bmp" />
+    <Image Include="res\whiteBishop.bmp" />
+    <Image Include="res\WhiteBishopMask.bmp" />
+    <Image Include="res\WhiteBoard.bmp" />
+    <Image Include="res\whiteKIng.bmp" />
+    <Image Include="res\WhiteKingCastling.bmp" />
+    <Image Include="res\WhiteKingCheck.bmp" />
+    <Image Include="res\whiteKnight.bmp" />
+    <Image Include="res\WhiteKnightMask.bmp" />
+    <Image Include="res\whitePawn.bmp" />
+    <Image Include="res\WhitePawnMask.bmp" />
+    <Image Include="res\whiteQueen.bmp" />
+    <Image Include="res\WhiteQueenMask.bmp" />
+    <Image Include="res\whiteRook.bmp" />
+    <Image Include="res\WhiteRookMask.bmp" />
+    <Image Include="res\whiteSel.bmp" />
+    <Image Include="res\WhiteSelBoard.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\NetworkChess.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="NetworkChess.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

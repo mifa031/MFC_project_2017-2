@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{74f16244-63f2-473e-9016-391b17028778}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4fa47a7f-abe5-4334-9a17-79ac73c60dd9}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{84ccfd0d-156e-4df3-975d-a8cdccd9a0f3}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Bishop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnterNotifyEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="King.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Knight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkChess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkChessDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pawn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Position.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PromotionDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Queen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialRule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NetworkChess.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Bishop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DefineWords.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnterNotifyEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="King.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Knight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkChess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkChessDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pawn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Position.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PromotionDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Queen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialRule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BlackBishop.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BlackBishopMask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BlackBoard.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BlackKing.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BlackKingCastling.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BlackKingCheck.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BlackKingMask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BlackKnight.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BlackKnightMask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BlackPawn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BlackPawnMask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BlackQueen.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BlackQueenMask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BlackRook.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BlackRookMask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BlackSel.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BlackSelBoard.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Castling.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ChessBoard.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ChessSkin.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Enpasant.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\GameRule1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\GameRule2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\GameRule3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\LoginClient.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\LoginLocal.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\LoginServer.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\main.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\NetworkChess.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Sel.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Untitled-1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\whiteBishop.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\WhiteBishopMask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\WhiteBoard.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\whiteKIng.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\WhiteKingCastling.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\WhiteKingCheck.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\whiteKnight.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\WhiteKnightMask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\whitePawn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\WhitePawnMask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\whiteQueen.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\WhiteQueenMask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\whiteRook.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\WhiteRookMask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\whiteSel.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\WhiteSelBoard.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\LoginBG.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\HOST_BUTTON.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\HOST_BUTTON_ACT.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\JOIN_BUTTON.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\JOIN_BUTTON_ACT.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\2P_BUTTON.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\2P_BUTTON_ACT.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\OK.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\MFCApplication2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\NetworkChess.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

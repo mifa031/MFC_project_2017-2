@@ -1,0 +1,350 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\NetworkChess.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 174, 64
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NetworkChess 정보"
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    LTEXT           "NetworkChess",IDC_STATIC,62,15,49,8,SS_NOPREFIX
+    LTEXT           "제작자 : 이진영,성동현,전영준,장종현",IDC_STATIC,24,29,130,8
+    DEFPUSHBUTTON   "확인",IDOK,117,43,50,14,WS_GROUP
+END
+
+IDD_LOGIN_DIALOG DIALOGEX 0, 0, 225, 150
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Login"
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_USER_NAME,133,55,75,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IP1,133,69,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IP2,152,69,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IP3,171,69,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IP4,190,69,18,12,ES_AUTOHSCROLL
+    CONTROL         "Button1",IDC_SERVER,"Button",BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,14,43,90,19
+    CONTROL         "Button2",IDC_CLIENT,"Button",BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,14,70,90,18
+    CONTROL         "Button3",IDC_LOCAL,"Button",BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,14,97,90,17
+    CONTROL         "확인",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,140,96,44,14
+    LTEXT           "ID :",IDC_STATIC,115,57,12,8,0,WS_EX_TRANSPARENT
+    LTEXT           " IP :",IDC_STATIC,113,70,13,8,0,WS_EX_TRANSPARENT
+END
+
+IDD_PROMOTION_DIALOG DIALOG 0, 0, 137, 94
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Promotion"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "선   택",IDOK,80,73,50,14
+    GROUPBOX        "Static",IDC_STATIC,7,7,54,80
+    CONTROL         "&Queen",IDC_RADIO_QUEEN,"Button",BS_AUTORADIOBUTTON,14,19,36,9
+    CONTROL         "&Rook",IDC_RADIO_ROOK,"Button",BS_AUTORADIOBUTTON,14,35,42,12
+    CONTROL         "&Knight",IDC_RADIO_KNIGHT,"Button",BS_AUTORADIOBUTTON,14,54,30,10
+    CONTROL         "&Bishop",IDC_RADIO_BISHOP,"Button",BS_AUTORADIOBUTTON,14,70,38,13
+    LTEXT           "폰이 상대편 진영끝에 도달하여 프로모션 합니다.   바꾸고자 하시는 말을 선택하여 주십시오.",IDC_STATIC,66,13,64,54
+END
+
+IDD_CHESS_DIALOG DIALOGEX 0, 0, 373, 312
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "NetworkChess"
+FONT 9, "굴림", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,6,7,229,268
+    EDITTEXT        IDC_STATUS_VIEW,247,41,119,30,ES_MULTILINE | ES_READONLY
+    EDITTEXT        IDC_BLACK_USER,247,96,59,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WHITE_USER,307,96,59,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CHAT_INPUT,247,230,119,19,ES_AUTOHSCROLL
+    PUSHBUTTON      "게임 종료",IDC_EXIT_BUTTON,308,288,58,17
+    PUSHBUTTON      "게임 재시작",IDC_RENEW_BUTTON,176,288,58,17
+    PUSHBUTTON      "접속해제",IDC_CLOSE_LINK_BUTTON,242,288,58,17
+    LISTBOX         IDC_CHAT_LIST,247,112,119,114,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "남은시간 :",IDC_STATIC,248,20,33,8
+    CTEXT           "",ID_COUNTDOWN,287,19,44,8
+    LTEXT           "흑",IDC_STATIC,247,83,8,8
+    LTEXT           "백",IDC_STATIC,307,83,8,8
+    PUSHBUTTON      "게임정보",IDC_GAME_INFO_BUTTON,109,288,58,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "NetworkChess"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "NetworkChess.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "NetworkChess.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 57
+    END
+
+    IDD_LOGIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_PROMOTION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 130
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CHESS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 366
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 305
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_WHITEROOK           BITMAP                  "res\\WhiteRook.bmp"
+
+IDB_BLACKBISHOP         BITMAP                  "res\\BlackBishop.bmp"
+
+IDB_BLACKBOARD          BITMAP                  "res\\BlackBoard.bmp"
+
+IDB_BLACKKING           BITMAP                  "res\\BlackKing.bmp"
+
+IDB_BLACKKNIGHT         BITMAP                  "res\\BlackKnight.bmp"
+
+IDB_BLACKPAWN           BITMAP                  "res\\BlackPawn.bmp"
+
+IDB_BLACKQUEEN          BITMAP                  "res\\BlackQueen.bmp"
+
+IDB_BLACKROOK           BITMAP                  "res\\BlackRook.bmp"
+
+IDB_WHITEBISHOP         BITMAP                  "res\\WhiteBishop.bmp"
+
+IDB_WHITEBOARD          BITMAP                  "res\\WhiteBoard.bmp"
+
+IDB_WHITEKING           BITMAP                  "res\\WhiteKing.bmp"
+
+IDB_WHITEKNIGHT         BITMAP                  "res\\WhiteKnight.bmp"
+
+IDB_WHITEPAWN           BITMAP                  "res\\WhitePawn.bmp"
+
+IDB_WHITEQUEEN          BITMAP                  "res\\WhiteQueen.bmp"
+
+IDB_BLACKSELBOARD       BITMAP                  "res\\BlackSelBoard.bmp"
+
+IDB_WHITESELBOARD       BITMAP                  "res\\WhiteSelBoard.bmp"
+
+IDB_ENPASANT            BITMAP                  "res\\Enpasant.bmp"
+
+IDB_CASTLING            BITMAP                  "res\\Castling.bmp"
+
+IDB_LOGIN_CLIENT        BITMAP                  "res\\LoginClient.bmp"
+
+IDB_LOGIN_LOCAL         BITMAP                  "res\\LoginLocal.bmp"
+
+IDB_LOGIN_SERVER        BITMAP                  "res\\LoginServer.bmp"
+
+IDB_CHESS_SKIN          BITMAP                  "res\\ChessSkin.bmp"
+
+IDB_BLACKKING_CHECK     BITMAP                  "res\\BlackKingCheck.bmp"
+
+IDB_WHITEKING_CHECK     BITMAP                  "res\\WhiteKingCheck.bmp"
+
+IDB_LoginBG             BITMAP                  "res\\LoginBG.bmp"
+
+IDB_HOST                BITMAP                  "res\\HOST_BUTTON.bmp"
+
+IDB_HOST_ACT            BITMAP                  "res\\HOST_BUTTON_ACT.bmp"
+
+IDB_JOIN                BITMAP                  "res\\JOIN_BUTTON.bmp"
+
+IDB_JOIN_ACT            BITMAP                  "res\\JOIN_BUTTON_ACT.bmp"
+
+IDB_2P                  BITMAP                  "res\\2P_BUTTON.bmp"
+
+IDB_OK                  BITMAP                  "res\\OK.bmp"
+
+IDB_2P_ACT              BITMAP                  "res\\2P_BUTTON_ACT.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_LOGIN_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CHESS_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MFCApplication2.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "NetworkChess 정보(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 소켓을 초기화하지 못했습니다."
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\NetworkChess.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
